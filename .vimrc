@@ -67,3 +67,30 @@ filetype plugin on           " 针对不同的文件类型加载对应的插件
 filetype plugin indent on    " 启用自动补全
 
 autocmd BufWritePre * :%s/\s\+$//ge  " 行尾空格删除的设置
+
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Easy Motion
+" Bi-directional find motion
+" " Jump to anywhere you want with minimal keystrokes, with just one key
+" binding.
+" " `s{char}{label}`
+nmap s <Plug>(easymotion-s)
+" " or
+" " `s{char}{char}{label}`
+" " Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-s2)
+
+" " Turn on case sensitive feature
+let g:EasyMotion_smartcase = 1
+
+" " JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
+" syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_enable_signs = 1
+
+" taglist
+nnoremap <silent> <F8> :TlistToggle<CR>
