@@ -1,49 +1,52 @@
+set t_Co=256
+
+set nocompatible             " be iMproved, required
+filetype off                 " required!
+
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'ack.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/syntastic'
-Bundle 'kien/ctrlp.vim'
-Bundle 'ervandew/supertab'
-Bundle 'jiangmiao/auto-pairs'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'jlanzarotta/bufexplorer'
-Bundle 'mbbill/undotree'
-Bundle 'mtth/locate.vim'
-Bundle 'Tabular'
-Bundle 'snipMate'
-Bundle 'Markdown'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'thinca/vim-quickrun'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'rails.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'tpope/vim-haml'
-" colorschemes
-Bundle 'flazz/vim-colorschemes'
-colorscheme fu
-" airline
-Bundle 'bling/vim-airline'
-set laststatus=2
-" unite
-Bundle 'shougo/unite.vim'
-Bundle 'basyura/unite-rails'
+Plugin 'ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'kien/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'mbbill/undotree'
+Plugin 'mtth/locate.vim'
+Plugin 'Tabular'
+Plugin 'snipMate'
+Plugin 'Markdown'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'thinca/vim-quickrun'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'rails.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-haml'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'bling/vim-airline'
+Plugin 'shougo/unite.vim'
+Plugin 'basyura/unite-rails'
 
-filetype off                 " required!
+call vundle#end()            " required!
 filetype plugin indent on    " required!
 
-set nocompatible             " be iMproved
-set cursorline               " 下划线
+colorscheme fu
+set laststatus=2
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set cursorline               " 下划线
 set autoindent               " 自动对齐
 set backspace=2              " 设置退格键可用
 set smartindent              " 智能自动缩进
