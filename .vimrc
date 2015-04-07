@@ -39,7 +39,6 @@ Plugin 'shougo/unite.vim'
 Plugin 'basyura/unite-rails'
 
 call vundle#end()            " required!
-filetype plugin indent on    " required!
 
 colorscheme fu
 set laststatus=2
