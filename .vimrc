@@ -51,7 +51,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
-set cursorline               " 下划线
+set cursorline               " 高亮显示当前行
+set cursorcolumn             " 高亮显示当前列
 set autoindent               " 自动对齐
 set backspace=2              " 设置退格键可用
 set smartindent              " 智能自动缩进
