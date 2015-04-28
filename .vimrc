@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'majutsushi/tagbar'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'jlanzarotta/bufexplorer'
@@ -30,6 +31,10 @@ Plugin 'Markdown'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'thinca/vim-quickrun'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-endwise'
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'rails.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-haml'
@@ -97,3 +102,6 @@ let g:syntastic_enable_signs = 1
 
 " taglist
 nnoremap <silent> <F8> :TlistToggle<CR>
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
