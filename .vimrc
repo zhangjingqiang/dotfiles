@@ -67,6 +67,9 @@ set nocompatible             " 关闭兼容模式
 set vb t_vb=                 " 关闭提示音
 set hidden                   " 允许在有未保存的修改时切换缓冲区
 set list                     " 显示Tab符，使用一高亮竖线代替
+" set foldmethod=indent        " 基于缩进进行代码折叠
+set foldmethod=syntax        " 基于语法进行代码折叠
+set nofoldenable             " 启动 vim 时关闭折叠代码
 set listchars=tab:\|\ ,
 syntax enable                " 打开语法高亮
 syntax on                    " 开启文件类型侦测
