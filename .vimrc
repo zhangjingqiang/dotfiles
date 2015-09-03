@@ -18,10 +18,10 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'ervandew/supertab'
 Plugin 'majutsushi/tagbar'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'vim-scripts/taglist.vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'mbbill/undotree'
 Plugin 'mtth/locate.vim'
@@ -82,9 +82,14 @@ filetype plugin indent on    " 启用自动补全
 
 autocmd BufWritePre * :%s/\s\+$//ge  " 行尾空格删除的设置
 
-let g:EasyMotion_do_mapping = 0 " Disable default mappings
+" NERDTree
+noremap <Leader>n :NERDTreeToggle<CR>
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " Easy Motion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
 " Bi-directional find motion
 " " Jump to anywhere you want with minimal keystrokes, with just one key
 " binding.
@@ -105,9 +110,3 @@ map <Leader>k <Plug>(easymotion-k)
 " syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1
-
-" taglist
-nnoremap <silent> <F8> :TlistToggle<CR>
-
-" tagbar
-nmap <F8> :TagbarToggle<CR>
