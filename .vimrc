@@ -43,10 +43,9 @@ Plugin 'bling/vim-airline'
 Plugin 'shougo/unite.vim'
 Plugin 'basyura/unite-rails'
 Plugin 'google/vim-colorscheme-primary'
-
 call vundle#end()            " required!
 
-colorscheme primary
+colorscheme fu
 set background=light
 set laststatus=2
 set expandtab
