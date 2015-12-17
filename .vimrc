@@ -40,8 +40,6 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-haml'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
-Plugin 'shougo/unite.vim'
-Plugin 'basyura/unite-rails'
 Plugin 'google/vim-colorscheme-primary'
 call vundle#end()            " required!
 
