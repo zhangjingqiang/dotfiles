@@ -27,20 +27,12 @@ Plugin 'mbbill/undotree'
 Plugin 'mtth/locate.vim'
 Plugin 'Tabular'
 Plugin 'snipMate'
-Plugin 'Markdown'
 Plugin 'Lokaltog/vim-easymotion'
-Plugin 'thinca/vim-quickrun'
 Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-bundler'
-Plugin 'tpope/vim-endwise'
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'rails.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-haml'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'google/vim-colorscheme-primary'
+
 call vundle#end()            " required!
 
 colorscheme fu
