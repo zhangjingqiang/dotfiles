@@ -32,6 +32,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'google/vim-colorscheme-primary'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required!
 
