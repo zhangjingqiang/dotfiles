@@ -1,19 +1,28 @@
-.vimrc
-======
+Terminal
+========
 
-# Vundle
+# .vimrc
+
+## Vundle
 
     https://github.com/gmarik/Vundle.vim
 
-# Configuration
+## Configuration
 
 - ~/.vimrc
 - ~/.vim/ftplugin/ruby.vim
 - ~/.vim/ftplugin/python.vim
 
-# Folders
+## Folders
 
 - ~/.vim/autoload
 - ~/.vim/doc
 - ~/.vim/plugin
 
+# .tmux.conf
+
+(TODO)
+
+# .zshrc
+
+(TODO)
