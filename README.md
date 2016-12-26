@@ -1,6 +1,8 @@
 Terminal
 ========
 
+vim + tmux + zsh
+
 # .vimrc
 
 ## Vundle
