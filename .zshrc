@@ -9,6 +9,8 @@ plugins=(git)
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
+export EDITOR='vim'
+
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
