@@ -16,6 +16,7 @@ eval "$(pyenv init -)"
 
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
+export DISABLE_AUTO_TITLE=true
 
 # macvim 7.4
 alias vi='/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/MacOS/Vim'
