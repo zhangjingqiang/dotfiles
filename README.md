@@ -3,11 +3,9 @@ Terminal
 
 vim + tmux + zsh
 
-# .vimrc
+# vim
 
-## Vundle
-
-https://github.com/gmarik/Vundle.vim
+- [Vundle](https://github.com/gmarik/Vundle.vim)
 
 ## Configuration
 
@@ -23,16 +21,14 @@ https://github.com/gmarik/Vundle.vim
 
 ---
 
-# .tmux.conf
+# tmux
 
-## tmux-plugins
-
-https://github.com/tmux-plugins
+- [tmux-plugins](https://github.com/tmux-plugins)
+- [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
 ---
 
-# .zshrc
+# zsh
 
-## oh-my-zsh
-
-https://github.com/robbyrussell/oh-my-zsh
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [zsh-users](https://github.com/zsh-users)
