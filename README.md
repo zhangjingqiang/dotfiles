@@ -21,8 +21,8 @@ Terminal
 
 # .tmux.conf
 
-(TODO)
+Useful setting
 
 # .zshrc
 
-(TODO)
+Useful setting
