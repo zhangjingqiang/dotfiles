@@ -14,6 +14,9 @@ export EDITOR='vim'
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
 
+# tmuxinator
+source ~/.bin/tmuxinator.zsh
+
 # macvim 7.4
 alias vi='/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/MacOS/Vim'
 alias vim='/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/MacOS/Vim'
