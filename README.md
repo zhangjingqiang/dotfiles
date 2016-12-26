@@ -21,8 +21,8 @@ Terminal
 
 # .tmux.conf
 
-Useful setting
+tmux-plugins
 
 # .zshrc
 
-Useful setting
+oh-my-zsh
