@@ -5,7 +5,7 @@ Terminal
 
 ## Vundle
 
-    https://github.com/gmarik/Vundle.vim
+https://github.com/gmarik/Vundle.vim
 
 ## Configuration
 
@@ -19,10 +19,18 @@ Terminal
 - ~/.vim/doc
 - ~/.vim/plugin
 
+---
+
 # .tmux.conf
 
-tmux-plugins
+## tmux-plugins
+
+https://github.com/tmux-plugins
+
+---
 
 # .zshrc
 
-oh-my-zsh
+## oh-my-zsh
+
+https://github.com/robbyrussell/oh-my-zsh
