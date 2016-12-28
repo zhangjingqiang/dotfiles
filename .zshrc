@@ -3,6 +3,14 @@ USERNAME=""
 export ZSH=/Users/$USERNAME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
+alias zshconfig="vim ~/.zshrc"
+alias ohmyzsh="vim ~/.oh-my-zsh"
+
+# History {{{
+HISTSIZE=10000
+SAVEHIST=9000
+HISTFILE=~/.zsh_history
+# }}}
 
 plugins=(git)
 
@@ -10,6 +18,9 @@ export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
 export EDITOR='vim'
+
+alias ct="ctags -R --exclude=.git --exclude=node_modules"
+alias dotfiles="ls -a | grep '^\.' | grep --invert-match '\.DS_Store\|\.$'"
 
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
