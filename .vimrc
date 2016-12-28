@@ -30,6 +30,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()            " required!
 
