@@ -1,6 +1,3 @@
-set t_Co=256
-set encoding=utf-8
-
 set nocompatible             " be iMproved, required
 filetype off                 " required!
 
@@ -37,12 +34,15 @@ Plugin 'editorconfig/editorconfig-vim'
 call vundle#end()            " required!
 
 colorscheme fu
+set t_Co=256
+set encoding=utf-8
 set background=light
 set laststatus=2
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set colorcolumn=80
 set cursorline               " 高亮显示当前行
 set cursorcolumn             " 高亮显示当前列
 set autoindent               " 自动对齐
