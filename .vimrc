@@ -1,3 +1,5 @@
+set t_Co=256
+
 set nocompatible             " be iMproved, required
 filetype off                 " required!
 
@@ -35,7 +37,7 @@ Plugin 'tpope/vim-endwise'
 call vundle#end()            " required!
 
 colorscheme fu
-set t_Co=256
+
 set encoding=utf-8
 set background=light
 set laststatus=2
