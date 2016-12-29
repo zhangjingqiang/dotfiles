@@ -29,11 +29,6 @@ eval "$(pyenv init -)"
 source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
 
-# macvim 7.4
-alias vi='/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/MacOS/Vim'
-alias vim='/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/MacOS/Vim'
-alias gvi='/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/MacOS/Vim'
-
 # virtualenvwrapper
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   export WORKON_HOME=$HOME/.virtualenvs
