@@ -1,3 +1,6 @@
+# Start tmux on opening the terminal
+if [ "$TMUX" = ""  ]; then tmux; fi
+
 # oh my zsh
 USERNAME=""
 export ZSH=/Users/$USERNAME/.oh-my-zsh
