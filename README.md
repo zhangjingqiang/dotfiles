@@ -24,6 +24,7 @@ vim + tmux + zsh
 # tmux
 
 - [tmux-plugins](https://github.com/tmux-plugins)
+- [tpm](https://github.com/tmux-plugins/tpm)
 - [tmuxinator](https://github.com/tmuxinator/tmuxinator)
 
 ---
