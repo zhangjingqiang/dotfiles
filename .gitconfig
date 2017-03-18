@@ -8,6 +8,6 @@
 [merge]
     tool = vimdiff
 [color]
-    ui = false
+    ui = auto
 [color "diff"]
     meta = blue black bold
