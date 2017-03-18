@@ -1,0 +1,13 @@
+[user]
+    email = <email>
+    name = <name>
+[core]
+    editor = vim
+    autocrlf = input
+    excludesfile = ~/.gitignore
+[merge]
+    tool = vimdiff
+[color]
+    ui = false
+[color "diff"]
+    meta = blue black bold
