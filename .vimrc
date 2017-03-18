@@ -39,6 +39,8 @@ Plugin 'tpope/vim-endwise'
 call vundle#end()            " required!
 
 colorscheme fu
+" colorscheme primary
+" color molokai
 
 set encoding=utf-8
 set background=light
