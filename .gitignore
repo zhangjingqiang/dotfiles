@@ -2,6 +2,18 @@
 .DS_Store
 
 # vim
-*.swp
-*.swo
+*.sw[nop]
 tags
+
+# ruby
+.bundle
+
+# rails
+db/*.sqlite3
+log/*.log
+
+# python
+*.pyc
+
+# common
+.env
