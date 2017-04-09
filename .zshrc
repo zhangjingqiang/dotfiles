@@ -5,8 +5,8 @@ if [ "$TMUX" = ""  ]; then tmux; fi
 USERNAME=""
 # macOS
 # ROOT="Users"
-# ubuntu
-# ROOT="/home"
+# Ubuntu/CentOS
+# ROOT="home"
 export ZSH=/$ROOT/$USERNAME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 ZSH_THEME="robbyrussell"
