@@ -3,9 +3,13 @@ if [ "$TMUX" = ""  ]; then tmux; fi
 
 # oh my zsh
 USERNAME=""
-export ZSH=/Users/$USERNAME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+# macOS
+# ROOT="Users"
+# ubuntu
+# ROOT="/home"
+export ZSH=/$ROOT/$USERNAME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
+ZSH_THEME="robbyrussell"
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
@@ -25,18 +29,23 @@ export EDITOR='vim'
 alias ct="ctags -R --exclude=.git --exclude=node_modules"
 alias dotfiles="ls -a | grep '^\.' | grep --invert-match '\.DS_Store\|\.$'"
 
+# ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-eval "$(pyenv init -)"
 
-# tmuxinator
-source ~/.bin/tmuxinator.zsh
-export DISABLE_AUTO_TITLE=true
+# python
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
 
 # virtualenvwrapper
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
   export WORKON_HOME=$HOME/.virtualenvs
   source /usr/local/bin/virtualenvwrapper.sh
 fi
+
+# tmuxinator
+source ~/.bin/tmuxinator.zsh
+export DISABLE_AUTO_TITLE=true
 
 # peco | use ec2ssh to generate ~/.ssh/config list first
 ssh-peco() {
