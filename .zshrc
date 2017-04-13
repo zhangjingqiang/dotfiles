@@ -47,8 +47,5 @@ fi
 source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
 
-# peco | use ec2ssh to generate ~/.ssh/config list first
-ssh-peco() {
- hostname=$(cat ~/.ssh/config | grep '^Host ' | grep -v -e 'bitbucket' -e 'github' | sed -e 's/Host //g' | sort -n | peco)
- [[ -n "$hostname" ]] && ssh "$hostname"
-}
+# peco ssh config
+alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
