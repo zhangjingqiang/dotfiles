@@ -33,6 +33,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'bling/vim-airline'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 Plugin 'python-mode/python-mode'
 Plugin 'tpope/vim-endwise'
 
@@ -109,3 +111,6 @@ map <Leader>k <Plug>(easymotion-k)
 " syntastic
 let g:syntastic_check_on_open = 1
 let g:syntastic_enable_signs = 1
+
+" markdown
+let g:vim_markdown_frontmatter = 1
