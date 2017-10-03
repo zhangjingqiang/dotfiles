@@ -1,5 +1,5 @@
 # Start tmux on opening the terminal
-if [ "$TMUX" = ""  ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux; fi
 
 # oh my zsh
 USERNAME=""
