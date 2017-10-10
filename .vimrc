@@ -84,7 +84,7 @@ autocmd BufWritePre * :%s/\s\+$//ge  " 行尾空格删除的设置
 " NERDTree
 noremap <Leader>n :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable="+"
-let g:NERDTreeDirArrowCollapsible="~"
+let g:NERDTreeDirArrowCollapsible="-"
 
 " tagbar
 nmap <F8> :TagbarToggle<CR>
