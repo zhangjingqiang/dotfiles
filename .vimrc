@@ -34,9 +34,11 @@ Plugin 'bling/vim-airline'
 Plugin 'google/vim-colorscheme-primary'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'godlygeek/tabular'
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'vim-ruby/vim-ruby'
 Plugin 'python-mode/python-mode'
-Plugin 'tpope/vim-endwise'
+Plugin 'elixir-editors/vim-elixir'
 
 call vundle#end()            " required!
 
