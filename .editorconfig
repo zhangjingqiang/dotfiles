@@ -13,15 +13,20 @@ insert_final_newline = true
 [*.{js,py,rb}]
 charset = utf-8
 
+# 2 space indentation
+[*.{rb,js}]
+indent_style = space
+indent_size = 2
+
 # 4 space indentation
-[*.py]
+[*.{py,php,ex}]
 indent_style = space
 indent_size = 4
 
-# 2 space indentation
-[*.rb]
-indent_style = space
-indent_size = 2
+# 8 tab indentation
+[*.go]
+indent_style = tab
+indent_size = 8
 
 # Tab indentation (no size specified)
 [Makefile]
