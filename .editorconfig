@@ -14,12 +14,12 @@ insert_final_newline = true
 charset = utf-8
 
 # 2 space indentation
-[*.{rb,js,scala}]
+[*.{rb,js,ex,scala}]
 indent_style = space
 indent_size = 2
 
 # 4 space indentation
-[*.{py,php,ex}]
+[*.{py,php}]
 indent_style = space
 indent_size = 4
 
