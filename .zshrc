@@ -26,6 +26,7 @@ export LC_CTYPE=en_US.UTF-8
 
 export EDITOR='vim'
 
+alias ctags="`brew --prefix`/bin/ctags" # If on macOS
 alias ct="ctags -R --exclude=.git --exclude=node_modules"
 alias dotfiles="ls -a | grep '^\.' | grep --invert-match '\.DS_Store\|\.$'"
 
