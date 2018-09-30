@@ -38,6 +38,9 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 
+# php
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
