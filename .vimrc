@@ -1,4 +1,4 @@
-:set cursorline
-:set cursorcolumn
+set cursorline
+set cursorcolumn
 
 Plug 'editorconfig/editorconfig-vim'
