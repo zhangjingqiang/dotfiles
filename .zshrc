@@ -11,10 +11,6 @@ export EDITOR='vim'
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 
-alias ctags="`brew --prefix`/bin/ctags" # If on macOS
-alias ct="ctags -R --exclude=.git --exclude=node_modules"
-alias dotfiles="ls -a | grep '^\.' | grep --invert-match '\.DS_Store\|\.$'"
-
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
