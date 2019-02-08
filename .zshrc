@@ -1,17 +1,9 @@
-# Start tmux on opening the terminal
-if [ "$TMUX" = "" ]; then tmux; fi
+export TERM="xterm-256color"
 
 # oh my zsh
-USERNAME=""
-# macOS
-# ROOT="Users"
-# Ubuntu/CentOS
-# ROOT="home"
-export ZSH=/$ROOT/$USERNAME/.oh-my-zsh
+export ZSH=/Users/hero/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 ZSH_THEME="robbyrussell"
-alias zshconfig="vim ~/.zshrc"
-alias ohmyzsh="vim ~/.oh-my-zsh"
 
 # History {{{
 HISTSIZE=10000
