@@ -5,18 +5,11 @@ export ZSH=/Users/hero/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 ZSH_THEME="robbyrussell"
 
-# History {{{
-HISTSIZE=10000
-SAVEHIST=9000
-HISTFILE=~/.zsh_history
-# }}}
-
 plugins=(git)
 
+export EDITOR='vim'
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-
-export EDITOR='vim'
 
 alias ctags="`brew --prefix`/bin/ctags" # If on macOS
 alias ct="ctags -R --exclude=.git --exclude=node_modules"
