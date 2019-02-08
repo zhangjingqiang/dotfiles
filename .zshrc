@@ -1,23 +1,13 @@
 export TERM="xterm-256color"
 
-# oh my zsh
-export ZSH=/Users/hero/.oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-ZSH_THEME="robbyrussell"
-
-plugins=(git)
-
-export EDITOR='vim'
 export LANG=en_US.UTF-8
-export LC_CTYPE=en_US.UTF-8
+export EDITOR='vim'
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
 
 # python
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
 
 # php
 export PATH="$HOME/.composer/vendor/bin:$PATH"
