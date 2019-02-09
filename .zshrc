@@ -12,6 +12,10 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 # php
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
+# go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
