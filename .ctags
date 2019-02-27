@@ -1,0 +1,4 @@
+--append=yes
+--recurse=yes
+--exclude=.git
+--tag-relative=yes
