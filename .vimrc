@@ -7,6 +7,7 @@ Plug 'majutsushi/tagbar'
 Plug 'vim-airline/vim-airline'
 Plug 'mileszs/ack.vim'
 Plug 'kien/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
 
 " [ack](https://beyondgrep.com/)
 " [ctags](https://ctags.io/)
