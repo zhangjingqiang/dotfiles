@@ -1,3 +1,7 @@
+;; Change mark command
+(global-unset-key (kbd "C-SPC"))
+(global-set-key (kbd "M-SPC") 'set-mark-command)
+
 ;; Git
 (require 'package)
 (add-to-list 'package-archives
