@@ -18,6 +18,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
+# php
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command -v rbenv 1>/dev/null 2>&1; then
@@ -29,9 +32,6 @@ export PATH="$HOME/.exenv/bin:$PATH"
 if command -v exenv 1>/dev/null 2>&1; then
   eval "$(exenv init -)"
 fi
-
-# php
-export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
