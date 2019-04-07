@@ -33,10 +33,14 @@ if command -v exenv 1>/dev/null 2>&1; then
   eval "$(exenv init -)"
 fi
 
+# asdf
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
+
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
 alias mux=tmuxinator
 
-# peco ssh config
+# peco
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
