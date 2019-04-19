@@ -12,6 +12,6 @@ Plug 'vim-airline/vim-airline'
 " [NERDTree](https://github.com/scrooloose/nerdtree)
 " [Tagbar](http://majutsushi.github.io/tagbar/)
 " [ack](https://beyondgrep.com/)
-" [ctags](https://ctags.io/)
 " [ctrlp](http://kien.github.io/ctrlp.vim/)
+" [ctags](https://ctags.io/)
 " [YouCompleteMe](http://valloric.github.io/YouCompleteMe/)
