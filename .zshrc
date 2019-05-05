@@ -3,6 +3,13 @@ export TERM="xterm-256color"
 export LANG=en_US.UTF-8
 export EDITOR='vim'
 
+plugins=(git)
+
+# Oh My Zsh
+export ZSH="~/.oh-my-zsh"
+ZSH_THEME="robbyrussell"
+source $ZSH/oh-my-zsh.sh
+
 # python
 export PATH="$HOME/.pyenv/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
