@@ -22,8 +22,6 @@ export PATH=$PATH:$GOPATH/bin
 
 # node.js
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # php
 export PATH="$HOME/.composer/vendor/bin:$PATH"
