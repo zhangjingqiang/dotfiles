@@ -1,4 +1,8 @@
 --append=yes
 --recurse=yes
---exclude={.git,vendor,node_modules}
+
+--exclude=.git
+--exclude=vendor
+--exclude=node_modules
+
 --tag-relative=yes
