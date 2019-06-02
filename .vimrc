@@ -1,6 +1,7 @@
 set cursorline
 set cursorcolumn
 
+call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'majutsushi/tagbar'
@@ -9,6 +10,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
+call plug#end()
 
 " nerdtree
 let g:nerdtree_tabs_open_on_gui_startup = 0
