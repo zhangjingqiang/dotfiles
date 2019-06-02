@@ -10,6 +10,15 @@ Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'ryanoasis/vim-devicons'
 
+" nerdtree
+let g:nerdtree_tabs_open_on_gui_startup = 0
+" ctrlp
+let g:ctrlp_custom_ignore = '.git\|vendor\|node_modules\|tags'
+
+" map keys
+nnoremap <silent> <leader>n :NERDTreeToggle<CR>
+nnoremap <silent> <leader>m :TagbarToggle<CR>
+
 " [NERDTree](https://github.com/scrooloose/nerdtree)
 " [Tagbar](http://majutsushi.github.io/tagbar/)
 " [ack](https://beyondgrep.com/)
