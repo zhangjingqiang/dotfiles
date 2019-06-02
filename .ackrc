@@ -1,0 +1,9 @@
+--color
+
+--ignore-file=is:tags
+--ignore-file=is:.gitignore
+--ignore-file=match:/[.]lock$
+
+--ignore-dir=.git
+--ignore-dir=vendor
+--ignore-dir=node_modules
