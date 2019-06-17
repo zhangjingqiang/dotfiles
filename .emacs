@@ -2,6 +2,7 @@
 (global-set-key (kbd "M-SPC") 'set-mark-command)             ;更改启用标记命令
 (global-linum-mode t)                                        ;显示行号
 (menu-bar-mode 0)                                            ;不显示菜单栏
+(tool-bar-mode 0)                                            ;不显示工具栏
 (scroll-bar-mode 0)                                          ;不显示滚动条
 (setq ring-bell-function 'ignore)                            ;去除响铃声音
 (add-to-list 'default-frame-alist '(fullscreen . maximized)) ;自动全屏
