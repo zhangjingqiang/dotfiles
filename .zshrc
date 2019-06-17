@@ -7,7 +7,7 @@ plugins=(git)
 
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 source $ZSH/oh-my-zsh.sh
 
 # python
@@ -49,3 +49,6 @@ alias mux=tmuxinator
 
 # peco
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
+
+# ag
+alias ag='ag --path-to-ignore ~/.ignore'
