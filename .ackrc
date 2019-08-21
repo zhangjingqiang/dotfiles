@@ -7,3 +7,4 @@
 --ignore-dir=.git
 --ignore-dir=vendor
 --ignore-dir=node_modules
+--ignore-dir=log
