@@ -9,4 +9,4 @@
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode))
 ;; default state
-setq evil-default-state 'emacs)
+(setq evil-default-state 'emacs)
