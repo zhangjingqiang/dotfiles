@@ -17,7 +17,7 @@ call plug#end()
 " nerdtree
 let g:nerdtree_tabs_open_on_gui_startup = 0
 " ctrlp
-let g:ctrlp_custom_ignore = '.git\|vendor\|node_modules\|log\|tags'
+let g:ctrlp_custom_ignore = '.git\|vendor\|node_modules\|log\|env\|tags'
 " easymotion
 nmap s <Plug>(easymotion-overwin-f2)
 
