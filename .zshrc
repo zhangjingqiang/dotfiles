@@ -55,6 +55,3 @@ alias mux=tmuxinator
 
 # peco
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
-
-# ag
-alias ag='ag --path-to-ignore ~/.ignore'
