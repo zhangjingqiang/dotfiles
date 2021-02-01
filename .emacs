@@ -8,6 +8,3 @@
 
 ;; mark command
 (global-set-key (kbd "M-SPC") 'set-mark-command)
-;; line number
-(when (version<= "26.0.50" emacs-version )
-  (global-display-line-numbers-mode))
