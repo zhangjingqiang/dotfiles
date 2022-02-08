@@ -10,11 +10,11 @@ insert_final_newline = true
 
 # Matches multiple files with brace expansion notation
 # Set default charset
-[*.{js,py,rb,php,ex,go,scala}]
+[*.{js,py,rb,php,ex,go}]
 charset = utf-8
 
 # 2 space indentation
-[*.{rb,js,ex,scala}]
+[*.{rb,js,ex}]
 indent_style = space
 indent_size = 2
 
