@@ -7,7 +7,7 @@ plugins=(git)
 
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
 # go
@@ -37,11 +37,9 @@ fi
 
 # php
 export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
-
-# asdf
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
+if command -v phpenv 1>/dev/null 2>&1; then
+  eval "$(phpenv init -)"
+fi
 
 # tmuxinator
 source ~/.bin/tmuxinator.zsh

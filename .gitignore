@@ -1,7 +1,11 @@
-## macOS
+##################################
+# macOS
+##################################
 .DS_Store
 
-## vim
+##################################
+# Vim
+##################################
 # Swap
 [._]*.s[a-v][a-z]
 !*.svg  # comment out if you don't need vector files
@@ -22,7 +26,9 @@ tags
 # Persistent undo
 [._]*.un~
 
-## emacs
+##################################
+# Emacs
+##################################
 # -*- mode: gitignore; -*-
 *~
 \#*\#
@@ -72,10 +78,14 @@ flycheck_*.el
 # network security
 /network-security.data
 
-## Python
+##################################
+# Python
+##################################
 __pycache__/
 *.py[cod]
 *$py.class
 
-## Node.js
+##################################
+# Node.js
+##################################
 node_modules/

@@ -18,3 +18,7 @@
     st = status
     unstage = reset HEAD --
     last = log -1 HEAD
+[http]
+    proxy = <proxy>
+[https]
+    proxy = <proxy>
