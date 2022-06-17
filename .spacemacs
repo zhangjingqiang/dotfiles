@@ -6,6 +6,9 @@
   "Layer configuration:
 This function should only modify configuration layer settings."
   (setq-default
+   ;; Disable auto-indent
+   spacemacs-yank-indent-threshold 0
+
    ;; Base distribution to use. This is a layer contained in the directory
    ;; `+distribution'. For now available distributions are `spacemacs-base'
    ;; or `spacemacs'. (default 'spacemacs)
