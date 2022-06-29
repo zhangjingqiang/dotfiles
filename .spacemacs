@@ -64,7 +64,18 @@ This function should only modify configuration layer settings."
        gofmt-command "goimports"
        godoc-at-point-function 'godoc-gogetdoc
      ) 
-     auto-completion
+     (auto-completion :variables
+                      auto-completion-return-key-behavior 'complete
+                      auto-completion-tab-key-behavior 'cycle
+                      auto-completion-complete-with-key-sequence nil
+                      auto-completion-complete-with-key-sequence-delay 0.1
+                      auto-completion-minimum-prefix-length 2
+                      auto-completion-idle-delay 0.2
+                      auto-completion-private-snippets-directory nil
+                      auto-completion-enable-snippets-in-popup nil
+                      auto-completion-enable-help-tooltip nil
+                      auto-completion-use-company-box nil
+                      auto-completion-enable-sort-by-usage nil)
      better-defaults
      emacs-lisp
      git
