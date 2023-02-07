@@ -18,6 +18,8 @@
     st = status
     unstage = reset HEAD --
     last = log -1 HEAD
+[credential]
+    helper = store
 [http]
     proxy = <proxy>
 [https]
