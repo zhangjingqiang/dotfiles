@@ -41,6 +41,9 @@ if command -v phpenv 1>/dev/null 2>&1; then
   eval "$(phpenv init -)"
 fi
 
+# Emacs
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
@@ -48,3 +51,6 @@ alias mux=tmuxinator
 
 # peco
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
+
+# fd
+alias fd=fdfind # Ubuntu/Debian
