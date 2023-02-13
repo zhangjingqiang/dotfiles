@@ -29,12 +29,6 @@ if command -v rbenv 1>/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-# elixir
-export PATH="$HOME/.exenv/bin:$PATH"
-if command -v exenv 1>/dev/null 2>&1; then
-  eval "$(exenv init -)"
-fi
-
 # php
 export PATH="$HOME/.phpenv/bin:$PATH"
 if command -v phpenv 1>/dev/null 2>&1; then
