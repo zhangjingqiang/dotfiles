@@ -43,6 +43,9 @@ source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
 alias mux=tmuxinator
 
+# brew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # peco
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
 
