@@ -34,6 +34,7 @@ export PATH="$HOME/.phpenv/bin:$PATH"
 if command -v phpenv 1>/dev/null 2>&1; then
   eval "$(phpenv init -)"
 fi
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 # Emacs
 export PATH="$HOME/.emacs.d/bin:$PATH"
