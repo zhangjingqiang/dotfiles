@@ -48,20 +48,13 @@ alias mux=tmuxinator
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
 
 # kubernetes
-source "$(brew --prefix kube-ps1)/share/kube-ps1.sh"
-export KUBE_PS1_SYMBOL_ENABLE=true
-export KUBE_PS1_CTX_COLOR=cyan
-export KUBE_PS1_NS_COLOR=yellow
-export KUBE_PS1_PREFIX="( "
-export KUBE_PS1_SUFFIX=" ) "
-export KUBE_PS1_SEPARATOR=" | "
-export KUBE_PS1_ENABLED=on
-PROMPT='$(kube_ps1) '$PROMPT
-
 alias kubectl="kubecolor"
 alias k="kubecolor"
 alias kc="kubectx"
 alias kn="kubens"
+
+source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1) '$PS1
 
 kubectx() {
   command kubectx "$@"
