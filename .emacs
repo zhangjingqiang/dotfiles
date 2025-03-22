@@ -18,8 +18,6 @@
 
 ;; UI settings
 (menu-bar-mode -1) ;; Disable menu bar
-(tool-bar-mode -1) ;; Disable tool bar
-(scroll-bar-mode -1) ;; Disable scroll bar
 (set-face-attribute 'default nil :font "monospace-12") ;; Set default font
 
 ;; Keybindings
@@ -44,12 +42,6 @@
 
 ;; Auto-revert buffers when files change on disk.
 (global-auto-revert-mode 1)
-
-;; Example use-package configuration for a mode (e.g., Python mode)
-(use-package python-mode
-  :mode "\\.py\\'"
-  :init
-  (setq python-shell-interpreter "python3"))
 
 ;; Example use-package configuration for a theme (e.g., doom-themes)
 (use-package doom-themes
