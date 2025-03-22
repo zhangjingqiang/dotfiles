@@ -44,11 +44,31 @@ source ~/.bin/tmuxinator.zsh
 export DISABLE_AUTO_TITLE=true
 alias mux=tmuxinator
 
-# brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
 # peco
 alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
 
-# fd
-alias fd=fdfind # Ubuntu/Debian
+# kubernetes
+source "$(brew --prefix kube-ps1)/share/kube-ps1.sh"
+export KUBE_PS1_SYMBOL_ENABLE=true
+export KUBE_PS1_CTX_COLOR=cyan
+export KUBE_PS1_NS_COLOR=yellow
+export KUBE_PS1_PREFIX="( "
+export KUBE_PS1_SUFFIX=" ) "
+export KUBE_PS1_SEPARATOR=" | "
+export KUBE_PS1_ENABLED=on
+PROMPT='$(kube_ps1) '$PROMPT
+
+alias kubectl="kubecolor"
+alias k="kubecolor"
+alias kc="kubectx"
+alias kn="kubens"
+
+kubectx() {
+  command kubectx "$@"
+  export KUBE_PS1_CONTEXT=$(kubectl config current-context)
+}
+
+kubens() {
+  command kubens "$@"
+  export KUBE_PS1_NAMESPACE=$(kubectl config view --minify --output 'jsonpath={..namespace}')
+}
