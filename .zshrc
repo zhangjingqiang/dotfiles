@@ -10,26 +10,26 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
-# go
+# Go
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
 export PATH="$GOROOT/bin:$PATH"
 export PATH="$PATH:$GOPATH/bin"
 
-# python
+# Python
 export PATH="$HOME/.pyenv/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# ruby
+# Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
 if command -v rbenv 1>/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
-# php
+# PHP
 export PATH="$HOME/.phpenv/bin:$PATH"
 if command -v phpenv 1>/dev/null 2>&1; then
   eval "$(phpenv init -)"
@@ -39,15 +39,7 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 # Emacs
 export PATH="$HOME/.emacs.d/bin:$PATH"
 
-# tmuxinator
-source ~/.bin/tmuxinator.zsh
-export DISABLE_AUTO_TITLE=true
-alias mux=tmuxinator
-
-# peco
-alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
-
-# kubernetes
+# Kubernetes
 alias kubectl="kubecolor"
 alias k="kubecolor"
 alias kc="kubectx"
@@ -65,3 +57,14 @@ kubens() {
   command kubens "$@"
   export KUBE_PS1_NAMESPACE=$(kubectl config view --minify --output 'jsonpath={..namespace}')
 }
+
+# tmuxinator
+source ~/.bin/tmuxinator.zsh
+export DISABLE_AUTO_TITLE=true
+alias mux=tmuxinator
+
+# peco
+alias s='ssh $(grep -iE "^host[[:space:]]+[^*]" ~/.ssh/config|peco|awk "{print \$2}")'
+
+# Starship
+eval "$(starship init zsh)"
