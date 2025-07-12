@@ -49,8 +49,18 @@ alias k="kubectl"
 alias kc="kubectx"
 alias kn="kubens"
 
-source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
-PS1='$(kube_ps1) '$PS1
+if [[ "$(uname)" == "Darwin" ]]; then
+  # macOS
+  kube_ps1_path="/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
+elif [[ "$(uname)" == "Linux" ]]; then
+  # Linux
+  kube_ps1_path="/home/linuxbrew/.linuxbrew/opt/kube-ps1/share/kube-ps1.sh"
+fi
+
+if [[ -f "$kube_ps1_path" ]]; then
+  source "$kube_ps1_path"
+  PS1='$(kube_ps1) '$PS1
+fi
 
 # tmuxinator
 source ~/.bin/tmuxinator.zsh
