@@ -14,12 +14,11 @@ source $ZSH/oh-my-zsh.sh
 # Starship
 eval "$(starship init zsh)"
 
-# Go
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
-eval "$(goenv init -)"
-export PATH="$GOROOT/bin:$PATH"
-export PATH="$PATH:$GOPATH/bin"
+# Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+if command -v rbenv 1>/dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
 
 # Python
 export PATH="$HOME/.pyenv/bin:$PATH"
@@ -27,10 +26,17 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
-# Ruby
-export PATH="$HOME/.rbenv/bin:$PATH"
-if command -v rbenv 1>/dev/null 2>&1; then
-  eval "$(rbenv init -)"
+# Go
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+
+# Node.js
+export PATH="$HOME/.nodenv/bin:$PATH"
+if command -v nodenv 1>/dev/null 2>&1; then
+  eval "$(nodenv init -)"
 fi
 
 # PHP
