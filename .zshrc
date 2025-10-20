@@ -12,7 +12,13 @@ ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
 # Starship
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+
+# Emacs
+export PATH="$HOME/.emacs.d/bin:$PATH"
+
+# MacVim
+export PATH="$PATH:/Applications/MacVim.app/Contents/bin"
 
 # Ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -45,9 +51,6 @@ if command -v phpenv 1>/dev/null 2>&1; then
   eval "$(phpenv init -)"
 fi
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-
-# Emacs
-export PATH="$HOME/.emacs.d/bin:$PATH"
 
 # Kubernetes
 alias kubectl="kubecolor"
