@@ -46,6 +46,9 @@ if command -v phpenv 1>/dev/null 2>&1; then
 fi
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
+# Rust
+export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
+
 # Kubernetes
 alias kubectl="kubecolor"
 alias k="kubectl"
