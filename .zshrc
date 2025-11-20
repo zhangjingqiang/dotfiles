@@ -55,6 +55,8 @@ alias k="kubectl"
 alias kc="kubectx"
 alias kn="kubens"
 
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 if [[ "$(uname)" == "Darwin" ]]; then
   # macOS
   kube_ps1_path="/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
